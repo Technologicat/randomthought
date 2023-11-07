@@ -1216,7 +1216,7 @@ def elbo_loss(model, x, training=None):
     #
     # which, since  DKL ≥ 0,  highlights two important facts. First,
     #
-    #   ELBO[θ,ϕ](x) ≤ log p(x)
+    #   ELBO[θ,ϕ](x) ≤ log pθ(x)
     #
     # for all θ,ϕ; and secondly, the tightness of this inequality depends on how close the
     # approximate variational posterior qϕ(z|x) is to the unknown true *posterior* pθ(z|x).
