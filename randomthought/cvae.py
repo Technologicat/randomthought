@@ -828,7 +828,7 @@ class CVAE(tf.keras.Model):
                 scaled_loss = self.optimizer.get_scaled_loss(loss)  # mixed precision
 
         # Compute gradients
-        trainable_vars = self.trainable_variables
+        trainable_vars = self.trainable_variables  # https://www.tensorflow.org/api_docs/python/tf/Module
         if fp16:
             scaled_gradients = tape.gradient(scaled_loss, trainable_vars)
             gradients = self.optimizer.get_unscaled_gradients(scaled_gradients)
