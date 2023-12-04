@@ -71,7 +71,7 @@ def nonanalytic_smooth_transition(x, m=1.0):
 
 # --------------------------------------------------------------------------------
 
-@tf.keras.utils.register_keras_serializable(package="ExtraFeathers")
+@tf.keras.utils.register_keras_serializable(package="RandomThought")
 class CyclicalLearningRate(tf.keras.optimizers.schedules.LearningRateSchedule):
     """A `LearningRateSchedule` for a cyclical LR with triangular cycles.
 
@@ -174,7 +174,7 @@ class CyclicalLearningRate(tf.keras.optimizers.schedules.LearningRateSchedule):
                 "name": self.name}
 
 
-@tf.keras.utils.register_keras_serializable(package="ExtraFeathers")
+@tf.keras.utils.register_keras_serializable(package="RandomThoguht")
 class Triangular2CyclicalLearningRate(CyclicalLearningRate):
     """A `LearningRateSchedule` for a cyclical LR with decaying triangular cycles.
 
@@ -204,7 +204,7 @@ class Triangular2CyclicalLearningRate(CyclicalLearningRate):
                 "name": self.name}
 
 
-@tf.keras.utils.register_keras_serializable(package="ExtraFeathers")
+@tf.keras.utils.register_keras_serializable(package="RandomThoguht")
 class ExponentialCyclicalLearningRate(CyclicalLearningRate):
     """A `LearningRateSchedule` for a cyclical LR with decaying triangular cycles.
 

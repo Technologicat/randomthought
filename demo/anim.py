@@ -4,9 +4,9 @@
 Also, make animations.
 
 This script needs a trained VAE model (see `main.py`). After the training finishes,
-run this script from the top-level `extrafeathers` directory as:
+run this script from the top-level `randomthought` directory as:
 
-    python -m demo.vae.anim
+    python -m demo.anim
 
 !!! Run this script on the CPU; the GPU will easily run out of memory when plotting dataset evolution. !!!
 """

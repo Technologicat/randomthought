@@ -2,9 +2,8 @@
 """Convolutional variational autoencoder (CVAE) implemented in Keras and TensorFlow.
 
 This is a simple technology demo, condensed and improved from existing online VAE tutorials,
-that just approximates MNIST digits. The goal of introducing a VAE in the context of
-`extrafeathers` is to eventually make a PINN (physically informed neural network) for
-the acceleration of numerical simulations in digital twin applications.
+that just approximates MNIST digits. The goal is to eventually make a physically informed AI
+for the acceleration of numerical simulations in digital twin applications.
 
 The idea is that a PDE solution field, projected onto a uniform grid, can be thought of as
 a multichannel image (like an RGB image, but tensor components instead of colors). A PINN
@@ -32,9 +31,9 @@ This script operates in two modes:
    1) As the main program, to train the model.
    2) As an importable module, to use the trained model.
 
-To train the model, open a terminal in the top-level `extrafeathers` directory, and:
+To train the model, open a terminal in the top-level `randomthought` directory, and:
 
-  python -m demo.vae.main
+  python -m demo.main
 
 With the MNIST digits dataset, the ELBO should quickly rise to ~1300 (on model variant 7 and later)
 after ~10 epochs if the random init is good.

@@ -13,8 +13,7 @@ The implementation is based on combining information from:
     https://medium.com/swlh/how-to-create-a-residual-network-in-tensorflow-and-keras-cd97f6c62557
     https://towardsdatascience.com/creating-deeper-bottleneck-resnet-from-scratch-using-tensorflow-93e11ff7eb02
 
-but mostly this is just a minimalistic jazz solo on the general idea of ResNets, for exploring them
-in the context of the MNIST datasets and `extrafeathers`.
+but mostly this is just a minimalistic jazz solo on the general idea of ResNets.
 """
 
 __all__ = ["ResidualBlock2D", "ResidualBlockTranspose2D",
